@@ -5,33 +5,33 @@
 #include "..\sa2-mod-loader\SA2ModLoader\include\SA2ModLoader.h"
 #include "..\mod-loader-common\ModLoaderCommon\IniFile.hpp"
 
-#define upgradecheck(name) bool Disable##name = settings->getBool("", "Disable"#name, true)
+#define upgradecheck(chara,name) bool Disable##chara##name = settings->getBool(#chara, "Disable"#name, true)
 
 extern "C"
 {
 	__declspec(dllexport) void Init(const char *path, const HelperFunctions &helperFunctions)
 	{
 		const IniFile *settings = new IniFile(std::string(path) + "\\config.ini");
-		upgradecheck(SonicLightShoes);
-		upgradecheck(SonicMagicGloves);
-		upgradecheck(SonicFlameRing);
-		upgradecheck(SonicBounceBracelet);
-		upgradecheck(TailsBooster);
-		upgradecheck(TailsBazooka);
-		upgradecheck(TailsLaserBlaster);
-		upgradecheck(KnucklesShovelClaw);
-		upgradecheck(KnucklesSunglasses);
-		upgradecheck(KnucklesHammerGloves);
-		upgradecheck(KnucklesAirNecklace);
-		upgradecheck(ShadowAirShoes);
-		upgradecheck(ShadowFlameRing);
-		upgradecheck(EggmanJetEngine);
-		upgradecheck(EggmanLargeCannon);
-		upgradecheck(EggmanLaserBlaster);
-		upgradecheck(EggmanProtectiveArmor);
-		upgradecheck(RougePickNails);
-		upgradecheck(RougeTreasureScope);
-		upgradecheck(RougeIronBoots);
+		upgradecheck(Sonic,LightShoes);
+		upgradecheck(Sonic,MagicGloves);
+		upgradecheck(Sonic,FlameRing);
+		upgradecheck(Sonic,BounceBracelet);
+		upgradecheck(Tails,Booster);
+		upgradecheck(Tails,Bazooka);
+		upgradecheck(Tails,LaserBlaster);
+		upgradecheck(Knuckles,ShovelClaw);
+		upgradecheck(Knuckles,Sunglasses);
+		upgradecheck(Knuckles,HammerGloves);
+		upgradecheck(Knuckles,AirNecklace);
+		upgradecheck(Shadow,AirShoes);
+		upgradecheck(Shadow,FlameRing);
+		upgradecheck(Eggman,JetEngine);
+		upgradecheck(Eggman,LargeCannon);
+		upgradecheck(Eggman,LaserBlaster);
+		upgradecheck(Eggman,ProtectiveArmor);
+		upgradecheck(Rouge,PickNails);
+		upgradecheck(Rouge,TreasureScope);
+		upgradecheck(Rouge,IronBoots);
 		delete settings;
 		if (DisableSonicLightShoes && DisableSonicMagicGloves && DisableSonicFlameRing && DisableSonicBounceBracelet && DisableShadowAirShoes && DisableShadowFlameRing)
 			WriteJump((void*)0x7207CC, (void*)0x720A82);
