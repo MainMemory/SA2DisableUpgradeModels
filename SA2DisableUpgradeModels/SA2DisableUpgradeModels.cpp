@@ -73,16 +73,19 @@ extern "C"
 				WriteJump((void*)0x72F5E6, (void*)0x72F601);
 			}
 		}
-		if (DisableRougePickNails && DisableRougeTreasureScope && DisableRougeIronBoots)
-			WriteJump((void*)0x730FEF, (void*)0x73112A);
+		if (DisableRougeTreasureScope && DisableRougeIronBoots)
+			WriteJump((void*)0x730FEF, (void*)0x73109C);
 		else
 		{
 			if (DisableRougeTreasureScope)
 				WriteJump((void*)0x730FEF, (void*)0x73104B);
 			if (DisableRougeIronBoots)
 				WriteJump((void*)0x73104B, (void*)0x73109C);
-			if (DisableRougePickNails)
-				WriteJump((void*)0x73109C, (void*)0x73112A);
+		}
+		if (DisableRougePickNails)
+		{
+			WriteJump((void*)0x7310BF, (void*)0x7310D0);
+			WriteJump((void*)0x731106, (void*)0x731117);
 		}
 		if (DisableEggmanLaserBlaster)
 			WriteJump((void*)0x74490B, (void*)0x74496B);
