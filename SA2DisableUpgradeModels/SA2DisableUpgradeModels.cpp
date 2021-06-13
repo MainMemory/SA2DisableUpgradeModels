@@ -101,6 +101,138 @@ extern "C"
 			WriteJump((void*)0x74860E, (void*)0x748717);
 		if (DisableTailsBooster)
 			WriteJump((void*)0x7488CF, (void*)0x748948);
+		for (int *i = (int*)0x104CEA0; i < (int*)0x104CEE8; ++i)
+			switch (*i)
+			{
+			case UpgradeBits_SonicLightShoes:
+				if (DisableSonicLightShoes)
+					*i = -1;
+				break;
+			case UpgradeBits_SonicFlameRing:
+				if (DisableSonicFlameRing)
+					*i = -1;
+				break;
+			case UpgradeBits_SonicBounceBracelet:
+				if (DisableSonicBounceBracelet)
+					*i = -1;
+				break;
+			case UpgradeBits_KnucklesShovelClaw:
+				if (DisableKnucklesShovelClaw)
+					*i = -1;
+				break;
+			case UpgradeBits_KnucklesSunglasses:
+				if (DisableSonicLightShoes)
+					*i = -1;
+				break;
+			case UpgradeBits_KnucklesHammerGloves:
+				if (DisableKnucklesHammerGloves)
+					*i = -1;
+				break;
+			case UpgradeBits_KnucklesAirNecklace:
+				if (DisableKnucklesAirNecklace)
+					*i = -1;
+				break;
+			case UpgradeBits_ShadowAirShoes:
+				if (DisableShadowAirShoes)
+					*i = -1;
+				break;
+			case UpgradeBits_ShadowFlameRing:
+				if (DisableShadowFlameRing)
+					*i = -1;
+				break;
+			case UpgradeBits_RougePickNails:
+				if (DisableRougePickNails)
+					*i = -1;
+				break;
+			case UpgradeBits_RougeTreasureScope:
+				if (DisableRougeTreasureScope)
+					*i = -1;
+				break;
+			case UpgradeBits_RougeIronBoots:
+				if (DisableRougeIronBoots)
+					*i = -1;
+				break;
+			}
+		for (int *i = (int*)0x104CE18; i < (int*)0x104CE94; ++i)
+			switch (*i)
+			{
+			case UpgradeBits_SonicLightShoes:
+				if (DisableSonicLightShoes)
+					*i = -1;
+				break;
+			case UpgradeBits_SonicFlameRing:
+				if (DisableSonicFlameRing)
+					*i = -1;
+				break;
+			case UpgradeBits_SonicBounceBracelet:
+				if (DisableSonicBounceBracelet)
+					*i = -1;
+				break;
+			case UpgradeBits_TailsBooster:
+				if (DisableTailsBooster)
+					*i = -1;
+				break;
+			case UpgradeBits_TailsBazooka:
+				if (DisableTailsBazooka)
+					*i = -1;
+				break;
+			case UpgradeBits_TailsLaserBlaster:
+				if (DisableTailsLaserBlaster)
+					*i = -1;
+				break;
+			case UpgradeBits_KnucklesShovelClaw:
+				if (DisableKnucklesShovelClaw)
+					*i = -1;
+				break;
+			case UpgradeBits_KnucklesSunglasses:
+				if (DisableSonicLightShoes)
+					*i = -1;
+				break;
+			case UpgradeBits_KnucklesHammerGloves:
+				if (DisableKnucklesHammerGloves)
+					*i = -1;
+				break;
+			case UpgradeBits_KnucklesAirNecklace:
+				if (DisableKnucklesAirNecklace)
+					*i = -1;
+				break;
+			case UpgradeBits_ShadowAirShoes:
+				if (DisableShadowAirShoes)
+					*i = -1;
+				break;
+			case UpgradeBits_ShadowFlameRing:
+				if (DisableShadowFlameRing)
+					*i = -1;
+				break;
+			case UpgradeBits_EggmanJetEngine:
+				if (DisableEggmanJetEngine)
+					*i = -1;
+				break;
+			case UpgradeBits_EggmanLargeCannon:
+				if (DisableEggmanLargeCannon)
+					*i = -1;
+				break;
+			case UpgradeBits_EggmanLaserBlaster:
+				if (DisableEggmanLaserBlaster)
+					*i = -1;
+				break;
+			case UpgradeBits_EggmanProtectiveArmor:
+				if (DisableEggmanProtectiveArmor)
+					*i = -1;
+				break;
+			case UpgradeBits_RougePickNails:
+				if (DisableRougePickNails)
+					*i = -1;
+				break;
+			case UpgradeBits_RougeTreasureScope:
+				if (DisableRougeTreasureScope)
+					*i = -1;
+				break;
+			case UpgradeBits_RougeIronBoots:
+				if (DisableRougeIronBoots)
+					*i = -1;
+				break;
+			}
 	}
 
 	__declspec(dllexport) ModInfo SA2ModInfo = { ModLoaderVer };
