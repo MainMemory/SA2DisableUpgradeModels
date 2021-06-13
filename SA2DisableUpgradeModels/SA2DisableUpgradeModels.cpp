@@ -108,6 +108,10 @@ extern "C"
 				if (DisableSonicLightShoes)
 					*i = -1;
 				break;
+			case UpgradeBits_SonicMagicGloves:
+				if (DisableSonicMagicGloves)
+					*i = -1;
+				break;
 			case UpgradeBits_SonicFlameRing:
 				if (DisableSonicFlameRing)
 					*i = -1;
@@ -158,6 +162,10 @@ extern "C"
 			{
 			case UpgradeBits_SonicLightShoes:
 				if (DisableSonicLightShoes)
+					*i = -1;
+				break;
+			case UpgradeBits_SonicMagicGloves:
+				if (DisableSonicMagicGloves)
 					*i = -1;
 				break;
 			case UpgradeBits_SonicFlameRing:
