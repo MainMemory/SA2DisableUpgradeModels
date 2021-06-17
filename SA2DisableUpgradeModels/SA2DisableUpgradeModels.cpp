@@ -125,7 +125,7 @@ extern "C"
 					*i = -1;
 				break;
 			case UpgradeBits_KnucklesSunglasses:
-				if (DisableSonicLightShoes)
+				if (DisableKnucklesSunglasses)
 					*i = -1;
 				break;
 			case UpgradeBits_KnucklesHammerGloves:
@@ -193,7 +193,7 @@ extern "C"
 					*i = -1;
 				break;
 			case UpgradeBits_KnucklesSunglasses:
-				if (DisableSonicLightShoes)
+				if (DisableKnucklesSunglasses)
 					*i = -1;
 				break;
 			case UpgradeBits_KnucklesHammerGloves:
